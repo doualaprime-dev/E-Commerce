@@ -8,10 +8,10 @@ export default function
 () {
   return (
     <ShopFrontLayout>
-        <div className='min-h-screen'>
-            <ShopBanner />
+        <div className=''>
+            {/* <ShopBanner />
             <ShopCategories />
-            <ProductListing />
+            <ProductListing /> */}
         </div>
     </ShopFrontLayout>
   )
