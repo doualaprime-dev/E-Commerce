@@ -1,4 +1,4 @@
-// import ShopFooter from '@/components/frontend/ShopFooter'
+import ShopFooter from '@/components/frontend/ShopFooter'
 import ShopHeader from '@/components/frontend/ShopHeader'
 import React, { ReactNode } from 'react'
 
@@ -7,7 +7,7 @@ export default function ShopFrontLayout({children}:{children:ReactNode}) {
     <div>
         <ShopHeader/>
         {children}
-        {/* <ShopFooter/> */}
+        <ShopFooter/>
     </div>
   )
 }

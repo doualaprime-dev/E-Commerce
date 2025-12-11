@@ -1,4 +1,5 @@
 
+import { Link } from '@inertiajs/react';
 import React, { useState } from 'react'
 
 export default function ShopHeader() {
@@ -56,10 +57,10 @@ export default function ShopHeader() {
                         ⚡ <a href="#">Vente flash</a>
                     </li>
                     <li className='hover:text-yellow-400 transition'>
-                        <a href="#"><i className='bi bi-person-circle'></i> Connexion</a>
+                        <Link href="/login"><i className='bi bi-person-circle'></i> Connexion</Link>
                     </li>
                     <li className='hover:text-yellow-400 transition'>
-                        <a href="#"><i className='bi bi-globe-americas'></i> Contact</a>
+                        <Link href="/contact"><i className='bi bi-globe-americas'></i> Contact</Link>
                     </li>
                 </ul>
             </div>
@@ -67,11 +68,11 @@ export default function ShopHeader() {
             {/** Middle Nav */}
             <div className='middle-nav w-full flex justify-between items-center px-[5%] lg:px-[12%] py-6 gap-10'>
                 <div className='w-1/5'>
-                    <a href='#'>
+                    <Link href='/'>
                         <h2 className='text-xl text-black font-bold'>
                             Douala<span className='text-yellow-500'>Prime</span>
                         </h2>
-                    </a>
+                    </Link>
                 </div>
 
                 <div className='product-search flex items-center h-14 border-4 border-yellow-500 rounded-md w-1/2 overflow-hidden'>
@@ -149,12 +150,12 @@ export default function ShopHeader() {
                 </div>
 
                 <ul className='flex gap-10 w-2/5 nav-menu font-bold'>
-                    <li><a href="#" className='hover:text-yellow-500 text-xl transition'>Accueil</a></li>
-                    <li><a href="#" className='hover:text-yellow-500 text-xl transition'>Apropos</a></li>
-                    <li><a href="#" className='hover:text-yellow-500 text-xl transition'>Boutique</a></li>
-                    <li><a href="#" className='hover:text-yellow-500 text-xl transition'>Blog</a></li>
-                    <li><a href="#" className='hover:text-yellow-500 text-xl transition'>Faq's</a></li>
-                    <li><a href="#" className='hover:text-yellow-500 text-xl transition'>Contact</a></li>
+                    <li><Link href="/" className='hover:text-yellow-500 text-xl transition'>Accueil</Link></li>
+                    <li><Link href="/about" className='hover:text-yellow-500 text-xl transition'>Apropos</Link></li>
+                    <li><Link href="/shop" className='hover:text-yellow-500 text-xl transition'>Boutique</Link></li>
+                    <li><Link href="/blog" className='hover:text-yellow-500 text-xl transition'>Blog</Link></li>
+                    <li><Link href="/faq" className='hover:text-yellow-500 text-xl transition'>Faq's</Link></li>
+                    <li><Link href="/contact" className='hover:text-yellow-500 text-xl transition'>Contact</Link></li>
                 </ul>
 
                 <a href="" className='flex items-center gap-3 hide'>
