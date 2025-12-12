@@ -1,3 +1,4 @@
+import ShopBanner from '@/components/frontend/ShopBanner'
 import ShopFooter from '@/components/frontend/ShopFooter'
 import ShopHeader from '@/components/frontend/ShopHeader'
 import React, { ReactNode } from 'react'
